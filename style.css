@@ -1,0 +1,86 @@
+html {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #BEE9E8;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.header {
+    font-size: 64px;
+    font-weight: bold;
+    color: #CAE9ff;
+    background-color: #62B6CB;
+
+    display: flex;
+    padding: 20px;
+    width: 100vw;
+    justify-content: center;
+
+    box-shadow: 3px 3px 5px grey;
+}
+
+.players {
+    font-size: 32px;
+    font-weight: bold;
+    color: #1B4965;
+
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    width: 350px;
+}
+
+.gameGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: fit-content;
+    height: fit-content;
+    border: 2px solid #1B4965;
+}
+
+.box {
+    background-color: #CAE9FF;
+    height: 120px;
+    width: 120px;
+
+    border: 2px solid #1B4965;
+}
+
+.box:hover {
+    background-color:#9cd4fc;
+    cursor: pointer;
+}
+
+.restart {
+    margin: 40px;
+}
+
+.restart button {
+    font-size: 32px;
+    color: #CAE9FF;
+    background-color: #62B6CB;
+
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.restart button:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.restart button:active {
+    scale: 1;
+}
